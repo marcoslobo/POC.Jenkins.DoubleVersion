@@ -15,6 +15,7 @@
 
 
 get password with this command: 
+
 `docker container exec CONTAINER_ID sh -c "cat /var/jenkins_home/secrets/initialAdminPassword"`
 
 access UI on localhost:8082 and configure with this password.
