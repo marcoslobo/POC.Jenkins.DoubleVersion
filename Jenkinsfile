@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'dotnet build ./POC.Jenkins.DoubleVersion.Api2'
+                sh 'dotnet build'
             }
         }
         stage('Test') {
