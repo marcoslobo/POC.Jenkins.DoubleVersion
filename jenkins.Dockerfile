@@ -16,7 +16,9 @@ RUN apt-get update \
     apt-get update
 
 # Install the .Net Core framework, set the path, and show the version of core installed.
-RUN apt-get install -y dotnet-sdk-2.2 && dotnet-sdk-3.1 && \
+RUN apt-get update && apt-get install -y \
+    dotnet-sdk-2.2 \
+    dotnet-sdk-3.1 && \
     export PATH=$PATH:$HOME/dotnet && \
     dotnet --version
 
